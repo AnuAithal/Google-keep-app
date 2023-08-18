@@ -1,0 +1,122 @@
+/* Basic CSS Reset */
+body,
+h1,
+h2,
+p,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Main App Styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nav{
+  background: linear-gradient(70deg, #fae786 0%, #ffe563 50%);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 50%;
+
+  align-items: center;
+  margin-left: 25%;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 50%;
+  border-bottom: 3px solid;
+  background-color: #ffffdf;
+
+}
+
+textarea {
+  resize: vertical;
+
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 15%;
+  height: 40px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  width: 190px;
+  margin-left: 20%;
+}
+
+.rows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.col-md-4 {
+  padding: 20px;
+  width: 250px;
+}
+
+.card {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background: linear-gradient(230deg, #f7eaad 0%, #ffffdf 80%);
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.note {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.note p {
+  font-size: 16px;
+}
